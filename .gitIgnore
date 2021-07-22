@@ -1,0 +1,28 @@
+.env /
+
+node_modules
+node_modules/
+./server/.eslintrc.cjs
+./server/.prettierrc
+./server/test.js
+server/package-lock.json/
+client/package-lock.json/
+
+/.pnp
+
+# testing
+/coverage
+
+# production
+
+/build
+
+# misc
+.env
+.env-sample
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+

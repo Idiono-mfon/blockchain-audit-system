@@ -1,0 +1,82 @@
+// Override default variables before the import
+$body-bg: #000;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+.no-margin {margin: 0px; padding: 0px;}
+.ft-2 {font-size: 12px !important;}
+
+.white {color: whitesmoke}
+.center {text-align: center;}
+
+
+.login {
+  &-header-image {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  &-form {
+    margin: 50px 10% 20% 10%;
+    // text-align: center;
+  }
+  &-input {
+    height: 45px;
+    text-align: center;
+    border-radius: 0;
+    color: black;
+  }
+  &-wrapper {
+    display: 'flex';
+    flex-direction: 'row';
+    align-content: 'center';
+    justify-content: 'center';
+    text-align: 'center';
+    height: 100vh;
+    // background-color: white;
+    padding: 20% 10%;
+    margin: auto;
+    align-items: center;
+  }
+  &-button {
+    margin-top: 50px;
+  }
+}
+
+.align-check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 2px 0%;
+  font-size: 12;
+  text-align: center;
+}
+
+.menu {
+  background-color: #2CC4C4;
+  height: 100vh;
+  width: auto;
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &-button {
+
+  }
+  &-logo {
+    margin: 20px auto;
+  }
+}

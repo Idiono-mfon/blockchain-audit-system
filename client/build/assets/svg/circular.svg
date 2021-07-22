@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="45" viewBox="0 0 54 45">
+  <defs>
+    <filter id="Icon_open-loop-circular" x="0" y="0" width="54" height="45" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.631"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_open-loop-circular)">
+    <path id="Icon_open-loop-circular-2" data-name="Icon open-loop-circular" d="M18,0A13.54,13.54,0,0,0,4.5,13.5H0l6.75,9,6.75-9H9a8.969,8.969,0,0,1,9-9ZM29.25,4.5l-6.75,9H27a8.969,8.969,0,0,1-9,9V27A13.54,13.54,0,0,0,31.5,13.5H36Z" transform="translate(9 6)" fill="#fff"/>
+  </g>
+</svg>
