@@ -95,7 +95,7 @@ class FileQueue {
             // Update status of the file
             await File.findOneAndUpdate({ sN }, { status: 'proven' });
 
-            this.queue.start(); // Start the queue to send all blogs blockchain too
+            this.queue.start(); // Start the queue to send all file logs blockchain too
           } else {
             const {
               data: { sN, fileSn },

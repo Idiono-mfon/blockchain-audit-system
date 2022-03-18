@@ -50,7 +50,12 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('combined'));
   app.use(express.static(clientPath));
   app.get('*', (req, res) => {
-    res.sendFile(resolve(__dirname, 'client', 'build', 'index.html'));
+    res
+      .set(
+        'Content-Security-Policy',
+        "default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'"
+      )
+      .sendFile(resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
 
